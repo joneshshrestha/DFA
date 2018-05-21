@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <string.h>
+
 #define MAX 100
 
+//DFA that accepts strings starts and ends with 'a'
 int main() {
 	int i;
 	char str[MAX], f = 'A', response;
@@ -39,27 +42,6 @@ int main() {
 }
 
 
-//int main() {
-//	int i;
-//	char str[MAX], f = 'A';
-//	printf("Enter string (0 or 1): ");
-//    scanf("%s", str);
-//	for (i = 0; i < strlen(str); i++) {
-//		switch(f)
-//		{
-//			case 'A':
-//				if(str[i] == '0') f = 'B';
-//				else if(str[i] == '1') f = 'A';
-//				break;
-//			
-//			case 'B':
-//				if(str[i] == '0') f = 'A';
-//				else if(str[i] == '1') f = 'B';
-//				break;
-//		}
-//	}
-//	if (f == 'A') printf("Accepted");
-//	else printf("Rejected");
-//}
+
 
 
