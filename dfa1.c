@@ -3,10 +3,11 @@
 
 int main() {
 	int i;
-	char str[MAX], f = 'A';
-	printf("Enter string (a or b): ");
-    scanf("%s", str);
-	for (i = 0; i < strlen(str); i++) {
+	char str[MAX], f = 'A', response;
+	do {
+		printf("Enter string (a or b): ");
+    	scanf("%s", str);
+		for (i = 0; i < strlen(str); i++) {
 		switch(f)
 		{
 			case 'A':
@@ -29,9 +30,12 @@ int main() {
 				else if(str[i] == 'b') f = 'D';
 				break;
 		}
-	}
-	if (f == 'B') printf("Accepted");
-	else printf("Rejected");
+	} 
+	if (f == 'B') printf("Accepted \n");
+	else printf("Rejected \n");
+	printf("Do you want to continue(y/n): ");
+    scanf("%s", &response);
+	} while(response == 'y');
 }
 
 
@@ -57,6 +61,5 @@ int main() {
 //	if (f == 'A') printf("Accepted");
 //	else printf("Rejected");
 //}
-
 
 
