@@ -1,4 +1,4 @@
-# DFA
+# DFA [Theory Of Computation]
 
 ∑ = {0, 1} accepting string :
 
